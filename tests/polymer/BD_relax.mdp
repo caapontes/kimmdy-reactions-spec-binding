@@ -1,0 +1,45 @@
+integrator              = bd
+dt = 1
+nsteps = 1000
+nstlog                  = 1
+nstxout-compressed = 1
+nstvout                 = 0
+nstfout                 = 0
+nstxout                 = 0
+
+;
+cutoff-scheme           = Verlet
+coulombtype             = Cut-off
+rcoulomb                = 2.8
+vdwtype                 = Cut-off
+vdw-modifier            = Potential-shift-Verlet
+rvdw                    = 2.8
+;
+tcoupl                  = no
+ref_t                   = 300
+tau_t                   = 1
+tc-grps			= System
+;
+pcoupl                  = no
+;
+constraints             = none
+;
+nstcomm                 = 100
+comm_mode               = linear
+comm_grps               = System
+pbc 			= xy
+nwall                   = 2   ; we still need a wall to avoid the chain to PBC through z-axis although in practice this is unlikely to happen as the box is very big
+wall-atomtype           = B0 B0  
+wall-density             = 10 10
+
+
+
+
+
+; Langevin dynamics
+bd-fric = 18939.4  ; friction coefficient. calibrated based on the diffusion coefficient of a protein domain of ~ 2.5 nm
+bd-gamma = 2.112e-06
+bd-z0 = 0.0 ; z coordinate for which the Vflow=0
+ld-seed = -1
+
+

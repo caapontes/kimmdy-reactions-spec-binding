@@ -1,0 +1,167 @@
+
+            Task: setup with output directory: /sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/0_setup
+            Task: setup, input:
+{}
+            Task: setup, output:
+{'': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/0_setup/.kimmdy_done'),
+ '0_setup.log': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/0_setup/0_setup.log'),
+ 'ff': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/0_setup/toppar.ff'),
+ 'top': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/0_setup/topol.top')}
+            
+            Task: run_md with output directory: /sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/1_equilibrium
+            Task: run_md, input:
+{'gro': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/conf0.gro'),
+ 'mdp': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/BD_kimmdy.mdp'),
+ 'ndx': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/index.ndx'),
+ 'plumed': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/plumed.dat'),
+ 'top': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/0_setup/topol.top')}
+            Task: run_md, output:
+{'': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/1_equilibrium/.kimmdy_done'),
+ '1_equilibrium.log': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/1_equilibrium/1_equilibrium.log'),
+ 'cpt': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/1_equilibrium/equilibrium.cpt'),
+ 'edr': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/1_equilibrium/equilibrium.edr'),
+ 'equilibrium.log': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/1_equilibrium/equilibrium.log'),
+ 'ff': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/1_equilibrium/toppar.ff'),
+ 'gro': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/1_equilibrium/equilibrium.gro'),
+ 'mdout.mdp': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/1_equilibrium/mdout.mdp'),
+ 'plumed_out': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/1_equilibrium/distances.dat'),
+ 'tpr': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/1_equilibrium/equilibrium.tpr'),
+ 'xtc': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/1_equilibrium/equilibrium.xtc')}
+            
+            Task: query_reaction with output directory: /sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/2_specbond
+            Task: query_reaction, input:
+{'ebind': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/ebind.dat'),
+ 'itp': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/toppar.ff/polymer.itp'),
+ 'plumed': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/plumed.dat'),
+ 'plumed_out': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/1_equilibrium/distances.dat')}
+            Task: query_reaction, output:
+{'': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/2_specbond/.kimmdy_done'),
+ '2_specbond.log': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/2_specbond/2_specbond.log'),
+ 'ff': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/2_specbond/toppar.ff')}
+            
+            Task: decide_recipe with output directory: /sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/3_decide_recipe
+            Task: decide_recipe, input:
+{}
+            Task: decide_recipe, output:
+{'': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/3_decide_recipe/.kimmdy_done'),
+ '3_decide_recipe.log': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/3_decide_recipe/3_decide_recipe.log'),
+ 'csv': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/3_decide_recipe/recipes.csv'),
+ 'ff': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/3_decide_recipe/toppar.ff'),
+ 'json': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/3_decide_recipe/radicals.json'),
+ 'svg': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/3_decide_recipe/reaction_rates.svg')}
+            
+            Task: apply_recipe with output directory: /sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/4_apply_recipe
+            Task: apply_recipe, input:
+{'edr': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/1_equilibrium/equilibrium.edr'),
+ 'gro': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/1_equilibrium/equilibrium.gro'),
+ 'xtc': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/1_equilibrium/equilibrium.xtc')}
+            Task: apply_recipe, output:
+{'': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/4_apply_recipe/.kimmdy_done'),
+ '4_apply_recipe.log': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/4_apply_recipe/4_apply_recipe.log'),
+ 'ff': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/4_apply_recipe/toppar.ff'),
+ 'top': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/4_apply_recipe/topol.top')}
+            
+            Task: run_md with output directory: /sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/5_equilibrium
+            Task: run_md, input:
+{'gro': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/1_equilibrium/equilibrium.gro'),
+ 'mdp': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/BD_kimmdy.mdp'),
+ 'ndx': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/index.ndx'),
+ 'plumed': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/plumed.dat'),
+ 'top': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/4_apply_recipe/topol.top')}
+            Task: run_md, output:
+{'': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/5_equilibrium/.kimmdy_done'),
+ '5_equilibrium.log': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/5_equilibrium/5_equilibrium.log'),
+ 'cpt': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/5_equilibrium/equilibrium.cpt'),
+ 'edr': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/5_equilibrium/equilibrium.edr'),
+ 'equilibrium.log': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/5_equilibrium/equilibrium.log'),
+ 'ff': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/5_equilibrium/toppar.ff'),
+ 'gro': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/5_equilibrium/equilibrium.gro'),
+ 'mdout.mdp': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/5_equilibrium/mdout.mdp'),
+ 'plumed_out': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/5_equilibrium/distances.dat'),
+ 'tpr': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/5_equilibrium/equilibrium.tpr'),
+ 'xtc': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/5_equilibrium/equilibrium.xtc')}
+            
+            Task: query_reaction with output directory: /sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/6_specbond
+            Task: query_reaction, input:
+{'ebind': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/ebind.dat'),
+ 'itp': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/toppar.ff/polymer.itp'),
+ 'plumed': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/plumed.dat'),
+ 'plumed_out': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/5_equilibrium/distances.dat')}
+            Task: query_reaction, output:
+{'': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/6_specbond/.kimmdy_done'),
+ '6_specbond.log': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/6_specbond/6_specbond.log'),
+ 'ff': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/6_specbond/toppar.ff')}
+            
+            Task: decide_recipe with output directory: /sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/7_decide_recipe
+            Task: decide_recipe, input:
+{}
+            Task: decide_recipe, output:
+{'': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/7_decide_recipe/.kimmdy_done'),
+ '7_decide_recipe.log': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/7_decide_recipe/7_decide_recipe.log'),
+ 'csv': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/7_decide_recipe/recipes.csv'),
+ 'ff': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/7_decide_recipe/toppar.ff'),
+ 'json': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/7_decide_recipe/radicals.json'),
+ 'svg': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/7_decide_recipe/reaction_rates.svg')}
+            
+            Task: apply_recipe with output directory: /sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/8_apply_recipe
+            Task: apply_recipe, input:
+{'edr': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/5_equilibrium/equilibrium.edr'),
+ 'gro': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/5_equilibrium/equilibrium.gro'),
+ 'xtc': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/5_equilibrium/equilibrium.xtc')}
+            Task: apply_recipe, output:
+{'': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/8_apply_recipe/.kimmdy_done'),
+ '8_apply_recipe.log': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/8_apply_recipe/8_apply_recipe.log'),
+ 'ff': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/8_apply_recipe/toppar.ff'),
+ 'top': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/8_apply_recipe/topol.top')}
+            
+            Task: run_md with output directory: /sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/9_equilibrium
+            Task: run_md, input:
+{'gro': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/5_equilibrium/equilibrium.gro'),
+ 'mdp': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/BD_kimmdy.mdp'),
+ 'ndx': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/index.ndx'),
+ 'plumed': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/plumed.dat'),
+ 'top': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/8_apply_recipe/topol.top')}
+            Task: run_md, output:
+{'': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/9_equilibrium/.kimmdy_done'),
+ '9_equilibrium.log': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/9_equilibrium/9_equilibrium.log'),
+ 'cpt': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/9_equilibrium/equilibrium.cpt'),
+ 'edr': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/9_equilibrium/equilibrium.edr'),
+ 'equilibrium.log': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/9_equilibrium/equilibrium.log'),
+ 'ff': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/9_equilibrium/toppar.ff'),
+ 'gro': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/9_equilibrium/equilibrium.gro'),
+ 'mdout.mdp': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/9_equilibrium/mdout.mdp'),
+ 'plumed_out': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/9_equilibrium/distances.dat'),
+ 'tpr': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/9_equilibrium/equilibrium.tpr'),
+ 'xtc': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/9_equilibrium/equilibrium.xtc')}
+            
+            Task: query_reaction with output directory: /sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/10_specbond
+            Task: query_reaction, input:
+{'ebind': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/ebind.dat'),
+ 'itp': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/toppar.ff/polymer.itp'),
+ 'plumed': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/plumed.dat'),
+ 'plumed_out': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/9_equilibrium/distances.dat')}
+            Task: query_reaction, output:
+{'': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/10_specbond/.kimmdy_done'),
+ '10_specbond.log': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/10_specbond/10_specbond.log'),
+ 'ff': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/10_specbond/toppar.ff')}
+            
+            Task: decide_recipe with output directory: /sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/11_decide_recipe
+            Task: decide_recipe, input:
+{}
+            Task: decide_recipe, output:
+{'': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/11_decide_recipe/.kimmdy_done'),
+ '11_decide_recipe.log': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/11_decide_recipe/11_decide_recipe.log'),
+ 'csv': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/11_decide_recipe/recipes.csv'),
+ 'ff': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/11_decide_recipe/toppar.ff'),
+ 'json': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/11_decide_recipe/radicals.json'),
+ 'svg': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/11_decide_recipe/reaction_rates.svg')}
+            
+            Task: apply_recipe with output directory: /sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/12_apply_recipe
+            Task: apply_recipe, input:
+{}
+            Task: apply_recipe, output:
+{'': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/12_apply_recipe/.kimmdy_done'),
+ '12_apply_recipe.log': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/12_apply_recipe/12_apply_recipe.log'),
+ 'ff': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/12_apply_recipe/toppar.ff'),
+ 'top': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_002/12_apply_recipe/topol.top')}
+            

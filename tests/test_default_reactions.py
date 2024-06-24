@@ -17,7 +17,7 @@ import os
 import shutil
 from pathlib import Path
 import numpy as np
-from homolysis.reaction import Homolysis
+from specbond.reaction import Homolysis
 from kimmdy.plugins import discover_plugins
 from kimmdy.config import Config
 from kimmdy.recipe import Break
