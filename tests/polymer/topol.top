@@ -210,7 +210,6 @@ polymer         1
    98      99    1
    99     100    1
 
-#include "crosslinks.itp"
 [ system ]
 POLYMER MIXTURE 
 [ molecules ]

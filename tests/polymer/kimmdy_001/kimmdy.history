@@ -105,7 +105,9 @@
             
             Task: apply_recipe with output directory: /sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_001/8_apply_recipe
             Task: apply_recipe, input:
-{}
+{'edr': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_001/5_equilibrium/equilibrium.edr'),
+ 'gro': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_001/5_equilibrium/equilibrium.gro'),
+ 'xtc': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_001/5_equilibrium/equilibrium.xtc')}
             Task: apply_recipe, output:
 {'': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_001/8_apply_recipe/.kimmdy_done'),
  '8_apply_recipe.log': PosixPath('/sw/mbm/aponteco/kimmdy/kimmdy/kimmdy-reactions/tests/polymer/kimmdy_001/8_apply_recipe/8_apply_recipe.log'),

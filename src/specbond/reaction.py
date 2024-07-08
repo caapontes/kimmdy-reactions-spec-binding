@@ -70,6 +70,7 @@ class SpecBond(ReactionPlugin):
             )
 
         recipes = []
+        idaux=0
         for plumedid, dists in distances.items():
             
             if plumedid == "time":
@@ -88,32 +89,37 @@ class SpecBond(ReactionPlugin):
 
 
             
-            #number of bonds
-            Nbound=len( top.atoms[atomnrs[0]].bound_to_nrs )
-            
             #decide if it will bind based on already formed bonds
             
-            if (Nbound < 3):
-
-                if(Nbound==1):  # first or last particle
-                    attempt_bind=True  
-
-                else:  #Nbonds = 2
-                                     
-                     idi=int ( atomnrs[0] )
-                     idj1=int ( top.atoms[atomnrs[0]].bound_to_nrs[0] )
-                     idj2=int (top.atoms[atomnrs[0]].bound_to_nrs[1] )
-                     
-                     
-                     if ( (idj1 - idi)**2 == 1 ) and (  (idj2 - idi)**2 == 1 ) :  
-                         attempt_bind=True
-                         
-                     else:
-                         attempt_bind=False
-                        
-            else:  #Nbonds>=3
-                attempt_bind=False
+            for at in (0,1):
+                #number of bonds
+                Nbound=len( top.atoms[atomnrs[at]].bound_to_nrs )
             
+                #decide if it will bind based on already formed bonds
+            
+                if (Nbound < 3):
+
+                    if(Nbound==1):  # first or last particle
+                        attempt_bind=True  
+
+                    else:  #Nbonds = 2: accept only if bonds are with adjacent particles.
+                                     
+                        idi=int ( atomnrs[at] )
+                        idj1=int ( top.atoms[atomnrs[at]].bound_to_nrs[0] )
+                        idj2=int (top.atoms[atomnrs[at]].bound_to_nrs[1] )
+                     
+                     
+                        if ( (idj1 - idi)**2 == 1 ) and (  (idj2 - idi)**2 == 1 ) :  
+                            attempt_bind=True
+                         
+                        else:
+                            attempt_bind=False
+                            break
+                        
+                else:  #Nbonds>=3
+                    attempt_bind=False
+                    break
+            #print( "Pair: %s - %s  Nbonds %d %d  attempt_bind %s\n" %( atomnrs[0] , atomnrs[1], len( top.atoms[atomnrs[0]].bound_to_nrs ) , len( top.atoms[atomnrs[1]].bound_to_nrs ), attempt_bind ) )
             
             
 
@@ -137,8 +143,8 @@ class SpecBond(ReactionPlugin):
 
 
                 
-            print( "Possible binding event: between atoms %s and %s with binding probability %f\n" %( atomnrs[0] , atomnrs[1], Pbind) )
-                
+            print( "%d Possible binding event: between atoms %s and %s with binding probability %f\n" %( idaux, atomnrs[0] , atomnrs[1], Pbind) )
+            idaux+=1
                 
             recipes.append(
                 Recipe(
